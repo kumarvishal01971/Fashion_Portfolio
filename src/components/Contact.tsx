@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Instagram, Send, MapPin, Phone } from 'lucide-react';
+import { SiWhatsapp } from 'react-icons/si';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -141,14 +142,21 @@ const Contact = () => {
 
               <div className="flex items-start space-x-4">
                 <div className="bg-accent/10 p-3 rounded-lg">
-                  <MapPin className="h-6 w-6 text-accent" />
+                  <SiWhatsapp className="h-6 w-6 text-accent" />
                 </div>
                 <div>
                   <h4 className="font-inter font-semibold text-primary mb-1">Studio</h4>
                   <p className="text-secondary font-inter">
-                    123 Fashion District<br />
-                    New York, NY 10001
+                    Whatsapp<br />
+                    @ 9818563384
                   </p>
+                  <a href="https://wa.me/919818563384" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-secondary hover:text-accent transition-colors duration-200 font-inter"
+                  >
+                    Connect on WhatsApp
+                  </a>
                 </div>
               </div>
             </div>
