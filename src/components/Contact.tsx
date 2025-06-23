@@ -27,6 +27,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 bg-white">
+      {/* Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -35,6 +36,7 @@ const Contact = () => {
       >
         <div className="absolute inset-0 bg-slate-900/70"></div>
       </div>
+      {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-primary mb-6 animate-slide-up">
