@@ -22,7 +22,7 @@ const Collections = () => {
       id: 1,
       title: "Arctic Minimalism",
       image: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
-      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
+      sketch: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop", // Example sketch URL
       moodboard: "Inspired by the pristine beauty of arctic landscapes and the serene simplicity of ice formations. This collection captures the essence of minimalism while maintaining functionality for the modern professional.",
       colorScheme: ["#1e293b", "#f8fafc", "#64748b", "#94a3b8"],
       materials: ["Organic Cotton", "Merino Wool", "Recycled Polyester", "Bamboo Fiber"],
