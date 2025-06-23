@@ -8,6 +8,7 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -16,13 +17,38 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
-    alert('Thank you for your message! I\'ll get back to you soon.');
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mgvynzzw", {
+        method: "POST",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `New message from ${formData.name}`,
+          _replyto: formData.email
+        }),
+      });
+
+      if (response.ok) {
+        setFormData({ name: '', email: '', message: '' });
+        alert('Thank you! Your message has been sent successfully.');
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error sending your message. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -46,6 +72,9 @@ const Contact = () => {
               Send Me a Message
             </h3>
             <form onSubmit={handleSubmit} className="space-y-6">
+              <input type="hidden" name="_next" value={window.location.href} />
+              <input type="hidden" name="_captcha" value="false" />
+              
               <div>
                 <label htmlFor="name" className="block text-sm font-inter font-medium text-primary mb-2">
                   Your Name
@@ -96,10 +125,23 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-accent text-white px-8 py-4 rounded-lg font-inter font-semibold hover:bg-accent/90 transition-all duration-200 flex items-center justify-center space-x-2 hover:scale-105"
+                disabled={isSubmitting}
+                className={`w-full bg-accent text-white px-8 py-4 rounded-lg font-inter font-semibold hover:bg-accent/90 transition-all duration-200 flex items-center justify-center space-x-2 hover:scale-105 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
               >
-                <Send className="h-5 w-5" />
-                <span>Send Message</span>
+                {isSubmitting ? (
+                  <>
+                    <svg className="animate-spin -ml-1 mr-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send className="h-5 w-5" />
+                    <span>Send Message</span>
+                  </>
+                )}
               </button>
             </form>
           </div>
