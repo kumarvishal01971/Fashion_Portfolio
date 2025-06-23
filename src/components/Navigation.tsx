@@ -36,7 +36,7 @@ const Navigation = () => {
             <span className={`text-xl font-playfair font-semibold transition-colors duration-200 ${
               scrolled ? 'text-primary' : 'text-white'
             }`}>
-              Sunil <span className="block text-accent">Kumar</span>
+              Sunil <span className="text-accent">Kumar</span>
             </span>
           </div>
 
