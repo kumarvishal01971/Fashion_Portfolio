@@ -27,16 +27,6 @@ const Contact = () => {
 
   return (
     <section id="contact" className="relative py-20 min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-       className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-       style={{
-        backgroundImage: 'url(https://wallpaperaccess.com/full/5932168.jpg)' // or your own image
-      }}
-    >
-      <div className="absolute inset-0 bg-slate-900/70"></div> {/* dark overlay */}
-    </div>
-
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
