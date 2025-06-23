@@ -82,6 +82,39 @@ const Collections = () => {
       process: "Innovative knitting techniques mimic the natural patterns found in ice crystals. Metallic elements are integrated into the construction. Specialized finishing processes create the lustrous feel of garments touched by winter light.",
       story: "This collection carries the crisp air and pristine beauty of winter landscapes. Each piece is designed to evoke the elegance and tranquility of frozen mornings, perfect for those who find beauty in winter's embrace.",
       year: "2024"
+    },
+    {
+      id: 7,
+      title: "Frozen Elegance",
+      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
+      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
+      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
+      process: "Innovative knitting techniques mimic the natural patterns found in ice crystals. Metallic elements are integrated into the construction. Specialized finishing processes create the lustrous feel of garments touched by winter light.",
+      story: "This collection carries the crisp air and pristine beauty of winter landscapes. Each piece is designed to evoke the elegance and tranquility of frozen mornings, perfect for those who find beauty in winter's embrace.",
+      year: "2024"
+    },
+    {
+      id: 8,
+      title: "Frozen Elegance",
+      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
+      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
+      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
+      process: "Innovative knitting techniques mimic the natural patterns found in ice crystals. Metallic elements are integrated into the construction. Specialized finishing processes create the lustrous feel of garments touched by winter light.",
+      story: "This collection carries the crisp air and pristine beauty of winter landscapes. Each piece is designed to evoke the elegance and tranquility of frozen mornings, perfect for those who find beauty in winter's embrace.",
+      year: "2024"
+    },
+    {
+      id: 9,
+      title: "Frozen Elegance",
+      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
+      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
+      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
+      process: "Innovative knitting techniques mimic the natural patterns found in ice crystals. Metallic elements are integrated into the construction. Specialized finishing processes create the lustrous feel of garments touched by winter light.",
+      story: "This collection carries the crisp air and pristine beauty of winter landscapes. Each piece is designed to evoke the elegance and tranquility of frozen mornings, perfect for those who find beauty in winter's embrace.",
+      year: "2024"
     }
   ];
 
