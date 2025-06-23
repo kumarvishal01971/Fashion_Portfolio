@@ -5,6 +5,7 @@ interface Collection {
   id: number;
   title: string;
   image: string;
+  sketch?: string;
   moodboard: string;
   colorScheme: string[];
   materials: string[];
@@ -21,6 +22,7 @@ const Collections = () => {
       id: 1,
       title: "Arctic Minimalism",
       image: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Inspired by the pristine beauty of arctic landscapes and the serene simplicity of ice formations. This collection captures the essence of minimalism while maintaining functionality for the modern professional.",
       colorScheme: ["#1e293b", "#f8fafc", "#64748b", "#94a3b8"],
       materials: ["Organic Cotton", "Merino Wool", "Recycled Polyester", "Bamboo Fiber"],
@@ -126,12 +128,12 @@ const Collections = () => {
             My Collections
           </h2>
           <p className="text-xl font-inter text-secondary max-w-2xl mx-auto animate-slide-up">
-            Each collection tells a unique story, blending artistry with wearability. 
+            Each collection tells a unique story, blending artistry with wearability.
             Click on any piece to explore the inspiration, process, and story behind it.
           </p>
         </div>
 
-        {/* Collections Grid */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {collections.map((collection, index) => (
             <div
@@ -167,10 +169,9 @@ const Collections = () => {
         </div>
       </div>
 
-      {/* Modal */}
       {selectedCollection && (
         <div className="fixed inset-0 bg-slate-900/80 z-50 flex items-center justify-center p-4 animate-fade-in">
-          <div className="bg-white rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto relative animate-zoom-in">
+          <div className="bg-white rounded-lg w-full max-w-6xl max-h-[90vh] overflow-y-auto relative animate-zoom-in">
             <button
               onClick={() => setSelectedCollection(null)}
               className="absolute top-4 right-4 p-2 bg-white rounded-full shadow-md hover:bg-gray-100 transition-colors duration-200 z-10"
@@ -178,85 +179,73 @@ const Collections = () => {
               <X className="h-5 w-5 text-primary" />
             </button>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-              {/* Image */}
-              <img
-                src={selectedCollection.image}
-                alt={selectedCollection.title}
-                className="w-full h-96 lg:h-full object-cover"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
+              {/* Final Garment Image */}
+              <div>
+                <img
+                  src={selectedCollection.image}
+                  alt="Final Garment"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
 
-              {/* Content */}
-              <div className="p-8">
-                <h3 className="text-3xl font-playfair font-bold text-primary mb-2">
+              {/* Description Block */}
+              <div className="overflow-y-auto max-h-[80vh]">
+                <h3 className="text-2xl font-playfair font-bold text-primary mb-1">
                   {selectedCollection.title}
                 </h3>
-                <p className="text-secondary font-inter mb-6">
+                <p className="text-secondary font-inter mb-4">
                   {selectedCollection.year} Collection
                 </p>
 
-                {/* Moodboard */}
-                <div className="mb-6">
-                  <div className="flex items-center mb-3">
-                    <Palette className="h-5 w-5 text-accent mr-2" />
-                    <h4 className="text-lg font-playfair font-semibold text-primary">Inspiration</h4>
-                  </div>
-                  <p className="text-secondary font-inter leading-relaxed">
+                <div className="mb-4">
+                  <Palette className="h-5 w-5 text-accent inline-block mr-2" />
+                  <strong className="text-primary">Inspiration:</strong>
+                  <p className="text-secondary font-inter leading-relaxed mt-2">
                     {selectedCollection.moodboard}
                   </p>
                 </div>
 
-                {/* Color Scheme */}
-                <div className="mb-6">
-                  <h4 className="text-lg font-playfair font-semibold text-primary mb-3">Color Palette</h4>
+                <div className="mb-4">
+                  <h4 className="text-primary font-semibold font-playfair mb-2">Color Palette</h4>
                   <div className="flex space-x-2">
-                    {selectedCollection.colorScheme.map((color, index) => (
-                      <div
-                        key={index}
-                        className="w-8 h-8 rounded-full border-2 border-gray-200"
-                        style={{ backgroundColor: color }}
-                        title={color}
-                      ></div>
+                    {selectedCollection.colorScheme.map((color, i) => (
+                      <div key={i} className="w-6 h-6 rounded-full border" style={{ backgroundColor: color }} />
                     ))}
                   </div>
                 </div>
 
-                {/* Materials */}
-                <div className="mb-6">
-                  <div className="flex items-center mb-3">
-                    <Fabric className="h-5 w-5 text-teal mr-2" />
-                    <h4 className="text-lg font-playfair font-semibold text-primary">Materials</h4>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {selectedCollection.materials.map((material, index) => (
-                      <span
-                        key={index}
-                        className="bg-light px-3 py-1 rounded-full text-sm font-inter text-secondary"
-                      >
-                        {material}
-                      </span>
-                    ))}
-                  </div>
+                <div className="mb-4">
+                  <Fabric className="h-5 w-5 text-teal inline-block mr-2" />
+                  <strong className="text-primary">Materials:</strong>
+                  <p className="text-secondary font-inter mt-2">
+                    {selectedCollection.materials.join(', ')}
+                  </p>
                 </div>
 
-                {/* Technical Process */}
-                <div className="mb-6">
-                  <div className="flex items-center mb-3">
-                    <Scissors className="h-5 w-5 text-accent mr-2" />
-                    <h4 className="text-lg font-playfair font-semibold text-primary">Technical Process</h4>
-                  </div>
-                  <p className="text-secondary font-inter leading-relaxed">
+                <div className="mb-4">
+                  <Scissors className="h-5 w-5 text-accent inline-block mr-2" />
+                  <strong className="text-primary">Process:</strong>
+                  <p className="text-secondary font-inter mt-2">
                     {selectedCollection.process}
                   </p>
                 </div>
 
-                {/* Story */}
                 <div>
-                  <h4 className="text-lg font-playfair font-semibold text-primary mb-3">Design Story</h4>
-                  <p className="text-secondary font-inter leading-relaxed">
+                  <strong className="text-primary font-playfair">Design Story:</strong>
+                  <p className="text-secondary font-inter mt-2">
                     {selectedCollection.story}
                   </p>
                 </div>
+              </div>
+
+              {/* Sketch Image */}
+              <div>
+                <img
+                  src={selectedCollection.sketch || selectedCollection.image}
+                  alt="Sketch"
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
             </div>
           </div>
