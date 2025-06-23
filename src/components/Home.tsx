@@ -30,25 +30,22 @@ const Home = () => {
           </h1>
           
           <p className="text-xl md:text-2xl font-inter font-light mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed animate-slide-up">
-            Fashion Designer & Creative Director
+            Fashion Designer
           </p>
 
           <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 max-w-2xl mx-auto">
               <h2 className="text-2xl font-playfair font-semibold mb-4">About Me</h2>
               <p className="text-lg font-inter leading-relaxed text-white/90">
-                I'm a passionate fashion designer with over 8 years of experience creating 
-                contemporary and sustainable fashion. My work focuses on blending traditional 
-                craftsmanship with modern aesthetics, creating pieces that tell stories and 
-                celebrate individuality. Each collection represents a journey of exploration 
-                in fabric, form, and function.
+              I'm an accomplished fashion designer with over 20 years of experience crafting timeless, innovative, and sustainable fashion. I suppose evolution is my constant nature and the work seamlessly fuses traditional artistry with contemporary design, reflecting a deep understanding of fabric, silhouette, and cultural relevance. Every collection is a narrative—rooted in craftsmanship, refined through experimentation, and created to celebrate individuality with sophistication and purpose.
               </p>
             </div>
           </div>
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-4 mb-[-20px] left-1/2 transform -translate-x-1/2 animate-bounce">
+
           <button
             onClick={scrollToCollections}
             className="p-3 rounded-full border-2 border-white/30 hover:bg-white/10 hover:border-accent transition-all duration-200"
