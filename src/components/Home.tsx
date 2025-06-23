@@ -15,7 +15,7 @@ const Home = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)'
+          backgroundImage: 'url(https://wallpaperaccess.com/full/5932168.jpg)'
         }}
       >
         <div className="absolute inset-0 bg-slate-900/70"></div>
