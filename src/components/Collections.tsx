@@ -34,6 +34,7 @@ const Collections = () => {
       id: 2,
       title: "Ocean Depths",
       image: "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Drawing inspiration from the mysterious depths of the ocean, deep blue tones, and the flowing nature of underwater currents. This collection embodies fluidity, movement, and connection with marine life.",
       colorScheme: ["#0f172a", "#0ea5e9", "#0891b2", "#06b6d4"],
       materials: ["Silk Crepe", "Organic Linen", "Recycled Ocean Plastic", "Natural Indigo Dyes"],
@@ -45,6 +46,7 @@ const Collections = () => {
       id: 3,
       title: "Steel & Grace",
       image: "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "A fusion of industrial architecture with feminine grace. This collection reimagines structured silhouettes through a modern lens, celebrating both strength and elegance.",
       colorScheme: ["#475569", "#64748b", "#94a3b8", "#cbd5e1"],
       materials: ["Technical Wool", "Structured Cotton", "Metal Hardware", "Recycled Steel Details"],
@@ -56,6 +58,7 @@ const Collections = () => {
       id: 4,
       title: "Misty Mornings",
       image: "https://images.pexels.com/photos/1336873/pexels-photo-1336873.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Inspired by early morning fog, soft clouds, and the delicate beauty of dawn breaking. This collection focuses on lightness, movement, and ethereal grace.",
       colorScheme: ["#f1f5f9", "#e2e8f0", "#cbd5e1", "#94a3b8"],
       materials: ["Silk Chiffon", "Organic Organza", "Sustainable Lace", "Pearl Details"],
@@ -67,6 +70,7 @@ const Collections = () => {
       id: 5,
       title: "Urban Teal",
       image: "https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "The juxtaposition of vibrant teal accents with urban neutrals. This collection explores the beauty found in city life and the energy of metropolitan spaces.",
       colorScheme: ["#14b8a6", "#0d9488", "#134e4a", "#2dd4bf"],
       materials: ["Sustainable Denim", "Eco Leather", "Recycled Hardware", "Organic Canvas"],
@@ -78,6 +82,7 @@ const Collections = () => {
       id: 6,
       title: "Frozen Elegance",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
       materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
@@ -89,6 +94,7 @@ const Collections = () => {
       id: 7,
       title: "Frozen Elegance",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
       materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
@@ -100,6 +106,7 @@ const Collections = () => {
       id: 8,
       title: "Frozen Elegance",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
       materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
@@ -111,6 +118,44 @@ const Collections = () => {
       id: 9,
       title: "Frozen Elegance",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
+      moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
+      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
+      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
+      process: "Innovative knitting techniques mimic the natural patterns found in ice crystals. Metallic elements are integrated into the construction. Specialized finishing processes create the lustrous feel of garments touched by winter light.",
+      story: "This collection carries the crisp air and pristine beauty of winter landscapes. Each piece is designed to evoke the elegance and tranquility of frozen mornings, perfect for those who find beauty in winter's embrace.",
+      year: "2024"
+
+    },
+    {
+      id: 10,
+      title: "Frozen Elegance",
+      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
+      moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
+      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
+      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
+      process: "Innovative knitting techniques mimic the natural patterns found in ice crystals. Metallic elements are integrated into the construction. Specialized finishing processes create the lustrous feel of garments touched by winter light.",
+      story: "This collection carries the crisp air and pristine beauty of winter landscapes. Each piece is designed to evoke the elegance and tranquility of frozen mornings, perfect for those who find beauty in winter's embrace.",
+      year: "2024"
+    },
+    {
+      id: 11,
+      title: "Frozen Elegance",
+      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
+      moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
+      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
+      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
+      process: "Innovative knitting techniques mimic the natural patterns found in ice crystals. Metallic elements are integrated into the construction. Specialized finishing processes create the lustrous feel of garments touched by winter light.",
+      story: "This collection carries the crisp air and pristine beauty of winter landscapes. Each piece is designed to evoke the elegance and tranquility of frozen mornings, perfect for those who find beauty in winter's embrace.",
+      year: "2024"
+    },
+    {
+      id: 12,
+      title: "Frozen Elegance",
+      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
       materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
