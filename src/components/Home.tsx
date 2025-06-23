@@ -44,7 +44,7 @@ const Home = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-4 mb-[-80px] left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-4 mb-[-100px] left-1/2 transform -translate-x-1/2 animate-bounce">
 
           <button
             onClick={scrollToCollections}
