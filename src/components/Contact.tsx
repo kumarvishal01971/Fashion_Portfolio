@@ -148,14 +148,13 @@ const Contact = () => {
                   <h4 className="font-inter font-semibold text-primary mb-1">Studio</h4>
                   <p className="text-secondary font-inter">
                     Whatsapp<br />
-                    @ 9818563384
                   </p>
                   <a href="https://wa.me/919818563384" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-secondary hover:text-accent transition-colors duration-200 font-inter"
                   >
-                    Connect on WhatsApp
+                    @ 9818563384
                   </a>
                 </div>
               </div>
