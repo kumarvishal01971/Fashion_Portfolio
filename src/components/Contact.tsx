@@ -89,7 +89,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200 font-inter resize-none"
-                  placeholder="Tell me about your project, ideas, or any questions you have..."
+                  placeholder="How can we help you???"
                 ></textarea>
               </div>
 
@@ -117,10 +117,10 @@ const Contact = () => {
                 <div>
                   <h4 className="font-inter font-semibold text-primary mb-1">Email</h4>
                   <a 
-                    href="mailto:sunil@example.com" 
+                    href="mailto:sunilkumar73584@gmail.com" 
                     className="text-secondary hover:text-accent transition-colors duration-200 font-inter"
                   >
-                    sunil@example.com
+                    sunilkumar73584@gmail.com
                   </a>
                 </div>
               </div>
@@ -132,10 +132,10 @@ const Contact = () => {
                 <div>
                   <h4 className="font-inter font-semibold text-primary mb-1">Phone</h4>
                   <a 
-                    href="tel:+1234567890" 
+                    href="tel:9818563384" 
                     className="text-secondary hover:text-accent transition-colors duration-200 font-inter"
                   >
-                    +1 (234) 567-8900
+                    +91 9818563384
                   </a>
                 </div>
               </div>
@@ -165,7 +165,7 @@ const Contact = () => {
               <h4 className="font-inter font-semibold text-primary mb-4">Follow My Work</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://instagram.com/sunilkumar"
+                  href="https://instagram.com/sunilkumar73584"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-teal to-accent text-white p-3 rounded-lg hover:scale-110 transition-all duration-200"
@@ -173,7 +173,7 @@ const Contact = () => {
                   <Instagram className="h-6 w-6" />
                 </a>
                 <a
-                  href="mailto:sunil@example.com"
+                  href="mailto:sunilkumar73584@gmail.com"
                   className="bg-primary text-white p-3 rounded-lg hover:scale-110 transition-all duration-200"
                 >
                   <Mail className="h-6 w-6" />
@@ -184,10 +184,9 @@ const Contact = () => {
             {/* Quote */}
             <div className="mt-8 p-6 bg-light rounded-lg">
               <blockquote className="text-lg font-playfair font-medium text-primary mb-3">
-                "Fashion is not just about clothing; it's about creating an identity, 
-                telling a story, and empowering the wearer to express their true self."
+                "Style is a way to say who you are without having to speak."
               </blockquote>
-              <cite className="text-accent font-inter font-semibold">- Sunil Kumar</cite>
+              <cite className="text-accent font-inter font-semibold">- Rachel Zoe</cite>
             </div>
           </div>
         </div>
