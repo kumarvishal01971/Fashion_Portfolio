@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowDown, Star } from 'lucide-react';
 
-const Hero = () => {
+export const Hero = () => {
   const scrollToPortfolio = () => {
     const element = document.getElementById('portfolio');
     if (element) {
@@ -12,10 +12,10 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(https://pngtree.com/freebackground/abstract-fashion-background-black-cloth-and-iridescent-holographic-foil-in-3d-render_3708121.html)'
+          backgroundImage: 'url(https://th.bing.com/th/id/OIP.7F4fFojbQqO-jq3xqEnwJQAAAA?r=0&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3)'
         }}
       >
         <div className="absolute inset-0 bg-dark/60"></div>
@@ -42,7 +42,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl font-inter font-light mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Creating timeless fashion pieces that blend contemporary sophistication 
+            Creating timeless fashion pieces that blend contemporary sophistication
             with classic elegance for the modern woman.
           </p>
 
@@ -80,5 +80,3 @@ const Hero = () => {
     </section>
   );
 };
-
-export default Hero;
