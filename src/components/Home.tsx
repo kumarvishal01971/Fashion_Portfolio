@@ -34,7 +34,7 @@ const Home = () => {
           </p>
 
           <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 max-w-2xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 max-w-4xl mx-auto">
               <h2 className="text-2xl font-playfair font-semibold mb-4">About Me</h2>
               <p className="text-lg font-inter leading-relaxed text-white/90">
               I'm an accomplished fashion designer with over 20 years of experience crafting timeless, innovative, and sustainable fashion. I suppose evolution is my constant nature and the work seamlessly fuses traditional artistry with contemporary design, reflecting a deep understanding of fabric, silhouette, and cultural relevance. Every collection is a narrative—rooted in craftsmanship, refined through experimentation, and created to celebrate individuality with sophistication and purpose.
