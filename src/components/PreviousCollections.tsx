@@ -23,7 +23,7 @@ const PreviousCollections = () => {
       id: 1,
       title: "Frozen Elegance",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
-      sketch: "https://via.placeholder.com/400x600?text=Sketch",
+      sketch: "https://www.pexels.com/photo/fresh-herbs-and-vegetables-at-local-market-32589762/",
       moodboard: "A recollection of wintery styles...",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
       materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
@@ -31,6 +31,32 @@ const PreviousCollections = () => {
       story: "The elegance of winter...",
       year: "2023"
     },
+    {
+      id: 2,
+      title: "Frozen Elegance",
+      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+      sketch: "https://www.pexels.com/photo/fresh-herbs-and-vegetables-at-local-market-32589762/",
+      moodboard: "A recollection of wintery styles...",
+      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
+      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
+      process: "Knitting techniques mimic ice crystals...",
+      story: "The elegance of winter...",
+      year: "2023"
+    },
+
+    {
+      id: 3,
+      title: "Frozen Elegance",
+      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+      sketch: "https://www.pexels.com/photo/fresh-herbs-and-vegetables-at-local-market-32589762/",
+      moodboard: "A recollection of wintery styles...",
+      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
+      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
+      process: "Knitting techniques mimic ice crystals...",
+      story: "The elegance of winter...",
+      year: "2023"
+    }
+
     // Add more old collections here
   ];
 
