@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Scissors } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +16,25 @@ const Navigation = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleNavClick = (sectionId: string) => {
+    setIsOpen(false);
+
+    if (location.pathname === '/') {
+      // Already on homepage, scroll directly
+      scrollToSection(sectionId);
+    } else {
+      // Navigate to homepage first, then scroll
+      navigate(`/#${sectionId}`);
+    }
+  };
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -35,28 +56,28 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link
-              to="/#home"
+            <button
+              onClick={() => handleNavClick('home')}
               className={`font-inter font-medium transition-colors duration-200 hover:text-accent ${
                 scrolled ? 'text-primary' : 'text-white'
               }`}
             >
               Home
-            </Link>
-            <Link
-              to="/#collections"
+            </button>
+            <button
+              onClick={() => handleNavClick('collections')}
               className={`font-inter font-medium transition-colors duration-200 hover:text-accent ${
                 scrolled ? 'text-primary' : 'text-white'
               }`}
             >
               Collections
-            </Link>
-            <Link
-              to="/#contact"
+            </button>
+            <button
+              onClick={() => handleNavClick('contact')}
               className="bg-accent text-white px-6 py-2 rounded-full font-inter font-medium hover:bg-accent/90 transition-all duration-200"
             >
               Contact Me
-            </Link>
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -74,27 +95,24 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden bg-white border-t border-gray-100 animate-slide-up">
             <div className="px-4 py-6 space-y-4">
-              <Link
-                to="/#home"
-                onClick={() => setIsOpen(false)}
+              <button
+                onClick={() => handleNavClick('home')}
                 className="block w-full text-left font-inter font-medium text-primary hover:text-accent transition-colors duration-200"
               >
                 Home
-              </Link>
-              <Link
-                to="/#collections"
-                onClick={() => setIsOpen(false)}
+              </button>
+              <button
+                onClick={() => handleNavClick('collections')}
                 className="block w-full text-left font-inter font-medium text-primary hover:text-accent transition-colors duration-200"
               >
                 Collections
-              </Link>
-              <Link
-                to="/#contact"
-                onClick={() => setIsOpen(false)}
+              </button>
+              <button
+                onClick={() => handleNavClick('contact')}
                 className="bg-accent text-white px-6 py-3 rounded-full font-inter font-medium hover:bg-accent/90 transition-all duration-200 w-full"
               >
                 Contact Me
-              </Link>
+              </button>
             </div>
           </div>
         )}
