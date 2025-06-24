@@ -131,7 +131,7 @@ const PreviousCollections = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
               onClick={() => setSelectedCollection(collection)}
             >
-              <div className="bg-[#0c0026]/30 backdrop-blur-md text-white border border-white/20 rounded-lg shadow-xl hover:bg-[#0c0026]/40 transition-all duration-300 overflow-hidden">
+              <div className="bg-[#2500C4]/30 backdrop-blur-md text-white border border-white/20 rounded-lg shadow-xl hover:bg-[#2500C4]/40 transition-all duration-300 overflow-hidden">
 
                 <div className="relative">
                   <img
