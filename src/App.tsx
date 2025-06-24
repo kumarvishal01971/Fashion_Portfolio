@@ -4,7 +4,7 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Collections from './components/Collections';
 import Contact from './components/Contact';
-import PreviousCollections from './components/PreviousCollections'; // Make sure this file exists
+import PreviousCollections from './components/PreviousCollections'; 
 
 function App() {
   return (
