@@ -132,7 +132,6 @@ const PreviousCollections = () => {
               onClick={() => setSelectedCollection(collection)}
             >
               <div className="bg-[#2500C4]/30 backdrop-blur-md text-white border border-white/20 rounded-lg shadow-xl hover:bg-[#2500C4]/40 transition-all duration-300 overflow-hidden">
-
                 <div className="relative">
                   <img
                     src={collection.image}
@@ -146,10 +145,10 @@ const PreviousCollections = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-playfair font-semibold text-primary mb-2">
+                  <h3 className="text-xl font-playfair font-semibold text-white mb-2">
                     {collection.title}
                   </h3>
-                  <p className="text-secondary font-inter text-sm">
+                  <p className="text-white/80 font-inter text-sm">
                     {collection.year} Collection
                   </p>
                 </div>
