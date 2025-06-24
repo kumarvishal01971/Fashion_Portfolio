@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { X, Palette, Scissors, ToyBrick as Fabric } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Img1 from './Images/Img1.jpg';
+import Img_1 from './Images/Img_1.jpg';
 
 
 interface Collection {
@@ -23,8 +25,8 @@ const Collections = () => {
     {
       id: 1,
       title: "Arctic Minimalism",
-      image: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
-      sketch: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop", // Example sketch URL
+      image: Img1,
+      sketch: Img_1, // Example sketch URL
       moodboard: "Inspired by the pristine beauty of arctic landscapes and the serene simplicity of ice formations. This collection captures the essence of minimalism while maintaining functionality for the modern professional.",
       colorScheme: ["#1e293b", "#f8fafc", "#64748b", "#94a3b8"],
       materials: ["Organic Cotton", "Merino Wool", "Recycled Polyester", "Bamboo Fiber"],
