@@ -94,9 +94,17 @@ const PreviousCollections = () => {
 
   return (
     <div className="relative min-h-screen">
-      {/* Fixed Background with Overlay */}
+      {/* Stretching Background */}
       <div className="fixed inset-0 -z-10">
-        <div className="absolute inset-0 bg-[url('https://wallpaperaccess.com/full/5932168.jpg')] bg-cover bg-center bg-no-repeat bg-fixed" />
+        <div 
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "url('https://wallpaperaccess.com/full/5932168.jpg')",
+            backgroundSize: "100% 100%",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat"
+          }}
+        />
         <div className="absolute inset-0 bg-slate-900/70" />
       </div>
 
