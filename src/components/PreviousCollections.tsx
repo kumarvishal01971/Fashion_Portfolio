@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, Palette, Scissors, ToyBrick as Fabric } from 'lucide-react';
+import bgImage from './Bg_1.jpg'; // ✅ Ensure this path and extension match your asset
 
 interface Collection {
   id: number;
@@ -22,7 +23,7 @@ const PreviousCollections = () => {
       id: 1,
       title: "Frozen Elegance",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
-      sketch: "https://www.pexels.com/photo/fresh-herbs-and-vegetables-at-local-market-32589762/",
+      sketch: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
       moodboard: "A recollection of wintery styles...",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
       materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
@@ -30,132 +31,57 @@ const PreviousCollections = () => {
       story: "The elegance of winter...",
       year: "2023"
     },
-    {
-      id: 2,
-      title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
-      sketch: "https://www.pexels.com/photo/fresh-herbs-and-vegetables-at-local-market-32589762/",
-      moodboard: "A recollection of wintery styles...",
-      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
-      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
-      process: "Knitting techniques mimic ice crystals...",
-      story: "The elegance of winter...",
-      year: "2023"
-    },
-    {
-      id: 3,
-      title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
-      sketch: "https://www.pexels.com/photo/fresh-herbs-and-vegetables-at-local-market-32589762/",
-      moodboard: "A recollection of wintery styles...",
-      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
-      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
-      process: "Knitting techniques mimic ice crystals...",
-      story: "The elegance of winter...",
-      year: "2023"
-    },
-    {
-      id: 4,
-      title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
-      sketch: "https://www.pexels.com/photo/fresh-herbs-and-vegetables-at-local-market-32589762/",
-      moodboard: "A recollection of wintery styles...",
-      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
-      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
-      process: "Knitting techniques mimic ice crystals...",
-      story: "The elegance of winter...",
-      year: "2023"
-    },
-    {
-      id: 5,
-      title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
-      sketch: "https://www.pexels.com/photo/fresh-herbs-and-vegetables-at-local-market-32589762/",
-      moodboard: "A recollection of wintery styles...",
-      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
-      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
-      process: "Knitting techniques mimic ice crystals...",
-      story: "The elegance of winter...",
-      year: "2023"
-    },
-    {
-      id: 6,
-      title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
-      sketch: "https://www.pexels.com/photo/fresh-herbs-and-vegetables-at-local-market-32589762/",
-      moodboard: "A recollection of wintery styles...",
-      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
-      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
-      process: "Knitting techniques mimic ice crystals...",
-      story: "The elegance of winter...",
-      year: "2023"
-    }
+    // Add more collections here
   ];
 
   return (
-    <div className="relative min-h-screen">
-      {/* Stretching Background */}
-      <div className="fixed inset-0 -z-10">
-        <div 
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url('https://wallpaperaccess.com/full/5932168.jpg')",
-            backgroundSize: "100% 100%",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat"
-          }}
-        />
-        <div className="absolute inset-0 bg-slate-900/70" />
-      </div>
+    <section
+      className="py-20 bg-cover bg-center bg-no-repeat min-h-screen"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-primary mb-6 animate-slide-up">
+            Previous Collections
+          </h2>
+          <p className="text-xl font-inter text-secondary max-w-2xl mx-auto animate-slide-up">
+            Explore past collections and timeless inspirations.
+          </p>
+        </div>
 
-      {/* Content Container */}
-      <div className="relative z-10">
-        <section className="py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6 animate-slide-up text-white">
-                Previous <span className="text-accent">Collections</span>
-              </h2>
-              <p className="text-xl font-inter text-gray-300 max-w-2xl mx-auto animate-slide-up">
-                Explore past collections and timeless inspirations.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-              {collections.map((collection, index) => (
-                <div
-                  key={collection.id}
-                  className="group cursor-pointer animate-zoom-in hover:scale-105 transition-all duration-300"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                  onClick={() => setSelectedCollection(collection)}
-                >
-                  <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                    <div className="relative">
-                      <img
-                        src={collection.image}
-                        alt={collection.title}
-                        className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/20 transition-all duration-300 flex items-center justify-center">
-                        <div className="bg-white/90 px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-75 group-hover:scale-100">
-                          <span className="text-primary font-inter font-semibold">View Details</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-playfair font-semibold text-primary mb-2">
-                        {collection.title}
-                      </h3>
-                      <p className="text-secondary font-inter text-sm">
-                        {collection.year} Collection
-                      </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {collections.map((collection, index) => (
+            <div
+              key={collection.id}
+              className="group cursor-pointer animate-zoom-in hover:scale-105 transition-all duration-300"
+              style={{ animationDelay: `${index * 0.1}s` }}
+              onClick={() => setSelectedCollection(collection)}
+            >
+              <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                <div className="relative">
+                  <img
+                    src={collection.image}
+                    alt={collection.title}
+                    className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/20 transition-all duration-300 flex items-center justify-center">
+                    <div className="bg-white/90 px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-75 group-hover:scale-100">
+                      <span className="text-primary font-inter font-semibold">View Details</span>
                     </div>
                   </div>
                 </div>
-              ))}
+                <div className="p-6">
+                  <h3 className="text-xl font-playfair font-semibold text-primary mb-2">
+                    {collection.title}
+                  </h3>
+                  <p className="text-secondary font-inter text-sm">
+                    {collection.year} Collection
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
+          ))}
+        </div>
       </div>
 
       {selectedCollection && (
@@ -197,7 +123,11 @@ const PreviousCollections = () => {
                   <h4 className="text-primary font-semibold font-playfair mb-2">Color Palette</h4>
                   <div className="flex space-x-2">
                     {selectedCollection.colorScheme.map((color, i) => (
-                      <div key={i} className="w-6 h-6 rounded-full border" style={{ backgroundColor: color }} />
+                      <div
+                        key={i}
+                        className="w-6 h-6 rounded-full border"
+                        style={{ backgroundColor: color }}
+                      />
                     ))}
                   </div>
                 </div>
@@ -237,7 +167,7 @@ const PreviousCollections = () => {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 
