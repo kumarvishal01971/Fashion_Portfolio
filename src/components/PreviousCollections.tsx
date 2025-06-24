@@ -101,7 +101,7 @@ const PreviousCollections = () => {
   return (
     <section className="relative py-20">
       {/* Fixed Background with Overlay */}
-      <div className="fixed inset-0 -z-10">
+      <div className="fixed inset-0 -z-10 bg-red-500"> {/* Temporary debug color */}
         <div className="absolute inset-0 bg-[url('https://wallpaperaccess.com/full/5932168.jpg')] bg-cover bg-center bg-no-repeat" />
         <div className="absolute inset-0 bg-slate-900/70" />
       </div>
