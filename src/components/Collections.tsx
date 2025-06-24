@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { X, Palette, Scissors, ToyBrick as Fabric } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 
 interface Collection {
   id: number;
@@ -178,7 +180,6 @@ const Collections = () => {
           </p>
         </div>
 
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {collections.map((collection, index) => (
             <div
@@ -212,6 +213,16 @@ const Collections = () => {
             </div>
           ))}
         </div>
+
+        {/* ⬇️ New Button Added */}
+        <div className="mt-16 text-center">
+          <Link
+            to="/previous-collections"
+            className="px-6 py-3 bg-accent text-white rounded-full font-inter font-semibold hover:bg-accent/90 transition-all duration-200 hover:scale-105"
+          >
+            View Previous Collections
+          </Link>
+        </div>
       </div>
 
       {selectedCollection && (
@@ -225,7 +236,6 @@ const Collections = () => {
             </button>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
-              {/* Final Garment Image */}
               <div>
                 <img
                   src={selectedCollection.image}
@@ -234,7 +244,6 @@ const Collections = () => {
                 />
               </div>
 
-              {/* Description Block */}
               <div className="overflow-y-auto max-h-[80vh]">
                 <h3 className="text-2xl font-playfair font-bold text-primary mb-1">
                   {selectedCollection.title}
@@ -284,7 +293,6 @@ const Collections = () => {
                 </div>
               </div>
 
-              {/* Sketch Image */}
               <div>
                 <img
                   src={selectedCollection.sketch || selectedCollection.image}

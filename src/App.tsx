@@ -1,19 +1,28 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Collections from './components/Collections';
 import Contact from './components/Contact';
+import PreviousCollections from './components/PreviousCollections'; // Make sure this file exists
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
-      <main>
-        <Home />
-        <Collections />
-        <Contact />
-      </main>
-    </div>
+    <Router>
+      <div className="min-h-screen bg-white">
+        <Navigation />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Home />
+              <Collections />
+              <Contact />
+            </>
+          } />
+          <Route path="/previous-collections" element={<PreviousCollections />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
