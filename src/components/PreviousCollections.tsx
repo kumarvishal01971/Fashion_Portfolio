@@ -99,31 +99,25 @@ const PreviousCollections = () => {
   ];
 
   return (
-    <section className="relative py-20 bg-light">
-      {/* Background - Fixed Version */}
+    <section className="relative py-20">
+      {/* Fixed Background with Overlay */}
       <div className="fixed inset-0 -z-10">
-        <div
-          className="w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://wallpaperaccess.com/full/5932168.jpg)',
-          }}
-        >
-          <div className="w-full h-full bg-slate-900/70" />
-        </div>
+        <div className="absolute inset-0 bg-[url('https://wallpaperaccess.com/full/5932168.jpg')] bg-cover bg-center bg-no-repeat" />
+        <div className="absolute inset-0 bg-slate-900/70" />
       </div>
 
-
-      {/* Foreground Content */}
+      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6 animate-slide-up text-white text-center">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6 animate-slide-up text-white">
             Previous <span className="text-accent">Collections</span>
           </h2>
-          <p className="text-xl font-inter text-secondary max-w-2xl mx-auto animate-slide-up">
+          <p className="text-xl font-inter text-gray-300 max-w-2xl mx-auto animate-slide-up">
             Explore past collections and timeless inspirations.
           </p>
         </div>
 
+        {/* Rest of your collections grid remains the same */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {collections.map((collection, index) => (
             <div
