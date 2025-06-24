@@ -7,7 +7,6 @@ import Collections from './components/Collections';
 import Contact from './components/Contact';
 import PreviousCollections from './components/PreviousCollections';
 
-// Handles scrolling to sections via hash (e.g., /#contact)
 const ScrollToHashElement = () => {
   const location = useLocation();
 
@@ -17,13 +16,26 @@ const ScrollToHashElement = () => {
       if (el) {
         setTimeout(() => {
           el.scrollIntoView({ behavior: 'smooth' });
-        }, 0); // delay ensures DOM is fully ready
+        }, 0);
       }
+    } else if (location.pathname === '/') {
+      // Scroll to top if on homepage and no hash
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [location]);
 
   return null;
 };
+
+function MainPage() {
+  return (
+    <>
+      <Home />
+      <Collections />
+      <Contact />
+    </>
+  );
+}
 
 function App() {
   return (
@@ -31,18 +43,8 @@ function App() {
       <ScrollToHashElement />
       <div className="min-h-screen bg-white">
         <Navigation />
-
         <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <section id="home"><Home /></section>
-                <section id="collections"><Collections /></section>
-                <section id="contact"><Contact /></section>
-              </>
-            }
-          />
+          <Route path="/" element={<MainPage />} />
           <Route path="/previous-collections" element={<PreviousCollections />} />
         </Routes>
       </div>
