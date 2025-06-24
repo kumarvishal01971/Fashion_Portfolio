@@ -100,15 +100,15 @@ const PreviousCollections = () => {
 
   return (
     <section className="relative py-20 bg-light">
-      {/* Background */}
-      <div className="absolute inset-0 -z-10">
+      {/* Background - Fixed Version */}
+      <div className="fixed inset-0 -z-10">
         <div
-          className="w-full h-full min-h-screen bg-cover bg-center bg-no-repeat"
+          className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url(https://wallpaperaccess.com/full/5932168.jpg)',
           }}
         >
-          <div className="w-full h-full min-h-screen bg-slate-900/70" />
+          <div className="w-full h-full bg-slate-900/70" />
         </div>
       </div>
 
