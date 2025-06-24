@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation
+} from 'react-router-dom';
 
 import Navigation from './components/Navigation';
 import Home from './components/Home';
@@ -18,8 +23,8 @@ const ScrollToHashElement = () => {
           el.scrollIntoView({ behavior: 'smooth' });
         }, 0);
       }
-    } else if (location.pathname === '/') {
-      // Scroll to top if on homepage and no hash
+    } else {
+      // Always scroll to top on route change when no hash is present
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [location]);
@@ -27,15 +32,13 @@ const ScrollToHashElement = () => {
   return null;
 };
 
-function MainPage() {
-  return (
-    <>
-      <Home />
-      <Collections />
-      <Contact />
-    </>
-  );
-}
+const MainPage = () => (
+  <>
+    <Home />
+    <Collections />
+    <Contact />
+  </>
+);
 
 function App() {
   return (
