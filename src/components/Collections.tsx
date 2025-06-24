@@ -178,7 +178,7 @@ const Collections = () => {
           </h2>
           <p className="text-xl font-inter text-secondary max-w-2xl mx-auto animate-slide-up">
             Each collection tells a unique story, blending artistry with wearability.
-            Click on any piece to explore the inspiration, process, and story behind it.
+            <b>Click on any piece</b> to explore the inspiration, process, and story behind it.
           </p>
         </div>
 
