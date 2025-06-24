@@ -114,9 +114,10 @@ const PreviousCollections = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-primary mb-6 animate-slide-up">
-            Previous Collections
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6 animate-slide-up text-white text-center">
+            Previous <span className="text-accent">Collections</span>
           </h2>
+
           <p className="text-xl font-inter text-secondary max-w-2xl mx-auto animate-slide-up">
             Explore past collections and timeless inspirations.
           </p>
