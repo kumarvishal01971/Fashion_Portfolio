@@ -103,7 +103,33 @@ const PreviousCollections = () => {
       process: "Knitting techniques mimic ice crystals...",
       story: "The elegance of winter...",
       year: "2023"
+  },{
+    id: 8,
+      title: "Frozen Elegance",
+      image: "https://images.pexels.com/photos/3057765/pexels-photo-3057765.jpeg",
+      sketch: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+      moodboard: "A recollection of wintery styles...",
+      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
+      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
+      process: "Knitting techniques mimic ice crystals...",
+      story: "The elegance of winter...",
+      year: "2023"
+
+  },
+  {
+    id: 9,
+      title: "Frozen Elegance",
+      image: "https://images.pexels.com/photos/3057765/pexels-photo-3057765.jpeg",
+      sketch: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+      moodboard: "A recollection of wintery styles...",
+      colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
+      materials: ["Merino Wool", "Cashmere Blend", "Crystal Buttons", "Metallic Thread"],
+      process: "Knitting techniques mimic ice crystals...",
+      story: "The elegance of winter...",
+      year: "2023"
+
   }
+    
     // Add more collections here
   ];
 
