@@ -23,7 +23,7 @@ const Collections = () => {
     {
       id: 1,
       title: "Arctic Minimalism",
-      image: "https://www.freepik.com/free-photo/lady-evening-dress-elegant-woman-long-gown_14670663.htm#fromView=search&page=1&position=14&uuid=42bf73f5-d968-4f00-8cc6-ad6399ae6a30&query=gowns",
+      image: "https://th.bing.com/th/id/OIP.WoSgwuEBgAExx-Tuym4JaQHaLH?w=188&h=282&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3",
       sketch: "https://tse1.mm.bing.net/th/id/OIP.qDQB1dY3AcAr9zVdyJK8UgHaKK?pid=ImgDet&w=195&h=268&c=7&dpr=1.4&o=7&rm=3", // Example sketch URL
       moodboard: "Inspired by the pristine beauty of arctic landscapes and the serene simplicity of ice formations. This collection captures the essence of minimalism while maintaining functionality for the modern professional.",
       colorScheme: ["#1e293b", "#f8fafc", "#64748b", "#94a3b8"],
