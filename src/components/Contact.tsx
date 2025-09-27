@@ -208,7 +208,7 @@ const Contact = () => {
               <h4 className="font-inter font-semibold text-primary mb-4">Follow My Work</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://instagram.com/sunilkumar73584"
+                  href="https://www.instagram.com/fashionfeature007/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-teal to-accent text-white p-3 rounded-lg hover:scale-110 transition-all duration-200"
