@@ -119,7 +119,7 @@ const Collections = () => {
     {
       id: 9,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      image: "https://images.pexels.com/photos/3057765/pexels-photo-3057765.jpeg",
       sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
