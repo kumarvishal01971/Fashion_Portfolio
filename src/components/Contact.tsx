@@ -163,7 +163,7 @@ const Contact = () => {
                     href="mailto:sunilkumar73584@gmail.com" 
                     className="text-secondary hover:text-accent transition-colors duration-200 font-inter"
                   >
-                    sunilkumar73584@gmail.com
+                    Kumarvishal01971@gmail.com
                   </a>
                 </div>
               </div>
@@ -175,10 +175,10 @@ const Contact = () => {
                 <div>
                   <h4 className="font-inter font-semibold text-primary mb-1">Phone</h4>
                   <a 
-                    href="tel:9818563384" 
+                    href="tel:9354576201" 
                     className="text-secondary hover:text-accent transition-colors duration-200 font-inter"
                   >
-                    +91 9818563384
+                    +91 9354576201
                   </a>
                 </div>
               </div>
@@ -192,12 +192,12 @@ const Contact = () => {
                   <p className="text-secondary font-inter">
                     Whatsapp<br />
                   </p>
-                  <a href="https://wa.me/919818563384" 
+                  <a href="https://wa.me/919354576201" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-secondary hover:text-accent transition-colors duration-200 font-inter"
                   >
-                    @ 9818563384
+                    @ 9354576201
                   </a>
                 </div>
               </div>
