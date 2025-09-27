@@ -22,7 +22,7 @@ const PreviousCollections = () => {
     {
       id: 1,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+      image: "https://tse1.mm.bing.net/th/id/OIP.uWD2A2QVK3u2hUyfZEGJ_QHaLH?rs=1&pid=ImgDetMain&o=7&rm=3",
       sketch: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
       moodboard: "A recollection of wintery styles...",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
@@ -34,7 +34,7 @@ const PreviousCollections = () => {
     {
       id: 2,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+      image: "https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg",
       sketch: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
       moodboard: "A recollection of wintery styles...",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
@@ -58,7 +58,7 @@ const PreviousCollections = () => {
     {
       id: 4,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+      image: "https://images.pexels.com/photos/3057765/pexels-photo-3057765.jpeg",
       sketch: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
       moodboard: "A recollection of wintery styles...",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
@@ -70,7 +70,7 @@ const PreviousCollections = () => {
     {
       id: 5,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+      image: "https://tse1.mm.bing.net/th/id/OIP.uWD2A2QVK3u2hUyfZEGJ_QHaLH?rs=1&pid=ImgDetMain&o=7&rm=3",
       sketch: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
       moodboard: "A recollection of wintery styles...",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
@@ -83,7 +83,7 @@ const PreviousCollections = () => {
   {
     id: 6,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+      image: "https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg",
       sketch: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
       moodboard: "A recollection of wintery styles...",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
@@ -95,7 +95,7 @@ const PreviousCollections = () => {
   {
     id: 7,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+      image: "https://images.pexels.com/photos/3057765/pexels-photo-3057765.jpeg",
       sketch: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
       moodboard: "A recollection of wintery styles...",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
