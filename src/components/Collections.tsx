@@ -35,7 +35,7 @@ const Collections = () => {
     {
       id: 2,
       title: "Ocean Depths",
-      image: "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      image: "https://tse2.mm.bing.net/th/id/OIP.uAmjN-Ss1Tfnx4swI3XA3wHaJ4?pid=ImgDet&w=195&h=259&c=7&dpr=1.4&o=7&rm=3",
       sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Drawing inspiration from the mysterious depths of the ocean, deep blue tones, and the flowing nature of underwater currents. This collection embodies fluidity, movement, and connection with marine life.",
       colorScheme: ["#0f172a", "#0ea5e9", "#0891b2", "#06b6d4"],
@@ -47,7 +47,7 @@ const Collections = () => {
     {
       id: 3,
       title: "Steel & Grace",
-      image: "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      image: "https://tse3.mm.bing.net/th/id/OIP.AJZkUmfKNdt5d3xlpAeAdgHaLH?pid=ImgDet&w=195&h=292&c=7&dpr=1.4&o=7&rm=3",
       sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "A fusion of industrial architecture with feminine grace. This collection reimagines structured silhouettes through a modern lens, celebrating both strength and elegance.",
       colorScheme: ["#475569", "#64748b", "#94a3b8", "#cbd5e1"],
@@ -59,7 +59,7 @@ const Collections = () => {
     {
       id: 4,
       title: "Misty Mornings",
-      image: "https://images.pexels.com/photos/1336873/pexels-photo-1336873.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      image: "https://tse4.mm.bing.net/th/id/OIP.QJY4krDUcYQgMQTKllNtkgHaJ3?pid=ImgDet&w=195&h=259&c=7&dpr=1.4&o=7&rm=3",
       sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Inspired by early morning fog, soft clouds, and the delicate beauty of dawn breaking. This collection focuses on lightness, movement, and ethereal grace.",
       colorScheme: ["#f1f5f9", "#e2e8f0", "#cbd5e1", "#94a3b8"],
@@ -71,7 +71,7 @@ const Collections = () => {
     {
       id: 5,
       title: "Urban Teal",
-      image: "https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      image: "https://tse1.mm.bing.net/th/id/OIP.uWD2A2QVK3u2hUyfZEGJ_QHaLH?rs=1&pid=ImgDetMain&o=7&rm=3",
       sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "The juxtaposition of vibrant teal accents with urban neutrals. This collection explores the beauty found in city life and the energy of metropolitan spaces.",
       colorScheme: ["#14b8a6", "#0d9488", "#134e4a", "#2dd4bf"],
@@ -83,7 +83,7 @@ const Collections = () => {
     {
       id: 6,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      image: "https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg",
       sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
@@ -95,7 +95,7 @@ const Collections = () => {
     {
       id: 7,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      image: "https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg",
       sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
@@ -107,7 +107,7 @@ const Collections = () => {
     {
       id: 8,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      image: "https://images.pexels.com/photos/3687550/pexels-photo-3687550.jpeg",
       sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
@@ -132,7 +132,7 @@ const Collections = () => {
     {
       id: 10,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      image: "https://images.pexels.com/photos/28191692/pexels-photo-28191692.jpeg",
       sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
@@ -144,7 +144,7 @@ const Collections = () => {
     {
       id: 11,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      image: "https://images.pexels.com/photos/291738/pexels-photo-291738.jpeg",
       sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
@@ -156,7 +156,7 @@ const Collections = () => {
     {
       id: 12,
       title: "Frozen Elegance",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      image: "https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg",
       sketch: "https://via.placeholder.com/400x600?text=Sketch", // Example sketch URL
       moodboard: "Capturing the essence of winter elegance - the crystalline beauty of ice, the texture of frost, and the ever-changing patterns of frozen water throughout the seasons.",
       colorScheme: ["#0f172a", "#1e293b", "#334155", "#64748b"],
